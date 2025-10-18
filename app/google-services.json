@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "828576084459",
+    "project_id": "barberroom-8a46e",
+    "storage_bucket": "barberroom-8a46e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828576084459:android:ca7ce625bf73e28d3369ae",
+        "android_client_info": {
+          "package_name": "com.example.barberroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTa1YMr0dGXexhICsLSV-4yWw0UA24ZF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
