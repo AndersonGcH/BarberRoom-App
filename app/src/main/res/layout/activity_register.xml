@@ -26,17 +26,40 @@
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegNameInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RegNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/RegEmailInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo electrónico">
+        android:layout_marginTop="16dp"
+        android:hint="Correo electrónico"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/RegEmailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+            android:background="@color/white"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -45,13 +68,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:textColorHint="@color/black"
         android:hint="Contraseña"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/RegPasswordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,4 +92,12 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/tvLoginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="¿Ya tienes una cuenta? Inicia sesión"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
 </LinearLayout>

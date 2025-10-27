@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navegacion_inicio"
+        android:icon="@drawable/ic_inicio"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/navegacion_cita"
+        android:icon="@drawable/ic_citas"
+        android:title="Citas" />
+
+    <item
+        android:id="@+id/navegacion_miscita"
+        android:icon="@drawable/ic_mis_citas"
+        android:title="Mis citas" />
+
+    <item
+        android:id="@+id/navegacion_servicio"
+        android:icon="@drawable/ic_servicios"
+        android:title="Servicios" />
+
+    <item
+        android:id="@+id/navegacion_barbero"
+        android:icon="@drawable/ic_barberos"
+        android:title="Barberos" />
+</menu>

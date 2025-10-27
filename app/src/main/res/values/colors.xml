@@ -7,9 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="inputBackground">#2C2C2C</color> <!-- gris oscuro suave -->
-    <color name="textPrimary">#FFFFFF</color> <!-- blanco -->
-    <color name="textSecondary">#BDBDBD</color> <!-- gris claro -->
-    <color name="secondaryColor">#3A3A3A</color> <!-- dorado oscuro -->
 
+    <color name="color_confirmada">#2196F3</color>
+    <color name="color_completada">#4CAF50</color>
+    <color name="color_cancelada">#F44336</color>
+    <color name="color_pendiente">#FF9800</color>
+    <color name="color_rechazada">#616161</color>
 </resources>

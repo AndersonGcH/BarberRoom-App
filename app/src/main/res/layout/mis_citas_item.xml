@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#282828">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvServicioCita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chipEstadoCita"
+            android:layout_marginEnd="8dp"
+            tools:text="Corte de Barba Premium"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvBarberoCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="4dp"
+            app:drawableStartCompat="@drawable/ic_barber_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tvServicioCita"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="con Roberto"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvFechaCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            app:drawableStartCompat="@android:drawable/ic_menu_my_calendar"
+            app:layout_constraintTop_toBottomOf="@+id/tvBarberoCita"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="25 de Diciembre, 2024 - 10:30 AM"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEstadoCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Confirmada" />
+
+        <LinearLayout
+            android:id="@+id/ratingSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/tvFechaCita"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:visibility="visible">
+
+            <RatingBar
+                android:id="@+id/rbCitaRating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:stepSize="1"
+                android:progressTint="#c9981e"/>
+
+            <Button
+                android:id="@+id/btnCalificarCita"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Calificar"
+                android:textColor="#c9981e" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCancelarCita"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar Cita"
+            android:textColor="@color/color_cancelada"
+            app:layout_constraintTop_toBottomOf="@+id/tvFechaCita"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
